@@ -64,7 +64,8 @@ with single_tab:
     wine = pd.DataFrame([values])[features]
     probability = float(model.predict_proba(wine)[0, 1])
     st.metric('Вероятность хорошего вина', f'{probability:.1%}')
-    st.write('Включить в подборку' if probability >= threshold else 'Пропустить')
+    st.write('Решение модели: включить в подборку' if probability >= threshold
+             else 'Решение модели: не включать в подборку')
 
 with metrics_tab:
     prediction = (scores >= threshold).astype(int)
