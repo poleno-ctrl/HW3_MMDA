@@ -1,0 +1,19 @@
+{
+  "threshold": 0.23635860938278724,
+  "random_state": 42,
+  "selection": "max validation precision subject to recall >= 0.7",
+  "features": [
+    "fixed_acidity",
+    "volatile_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "free_sulfur_dioxide",
+    "total_sulfur_dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol",
+    "is_red"
+  ]
+}
